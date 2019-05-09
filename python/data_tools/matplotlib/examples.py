@@ -28,32 +28,32 @@ denver_salaries = df[df[location_col] == "Denver"][norm_salary_col].values
 cary_salaries = df[df[location_col] == "Cary"][norm_salary_col].values
 louisville_salaries = df[df[location_col] == "Louisville"][norm_salary_col].values
 
-### bar plot of average salary by language
-xs = ["Python", "Haskell", "C#", "Java"]
-ys = [
-    np.mean(python_salaries),
-    np.mean(haskell_salaries),
-    np.mean(c_sharp_salaries),
-    np.mean(java_salaries),
-]
+### bar plot of average salary by languag
+# xs = ["Python", "Haskell", "C#", "Java"]
+# ys = [
+#     np.mean(python_salaries),
+#     np.mean(haskell_salaries),
+#     np.mean(c_sharp_salaries),
+#     np.mean(java_salaries),
+# ]
 
 # plt.figure()
 # plt.bar(xs, ys)
 # plt.savefig(os.path.join(PLOT_DIR, "bar.png"))
 
 ### bar plot with title, xlabel, ylabel
-xs = ["Python", "Haskell", "C#", "Java"]
-ys = [
-    np.mean(python_salaries),
-    np.mean(haskell_salaries),
-    np.mean(c_sharp_salaries),
-    np.mean(java_salaries),
-]
+# xs = ["Python", "Haskell", "C#", "Java"]
+# ys = [
+#     np.mean(python_salaries),
+#     np.mean(haskell_salaries),
+#     np.mean(c_sharp_salaries),
+#     np.mean(java_salaries),
+# ]
 
 # plt.figure()
 # ax = plt.gca()
-# ax.tick_params(axis='both', which='major', labelsize=6)
-# plt.bar(xs, ys)
+# # ax.tick_params(axis='both', which='major', labelsize=6)
+# # plt.bar(xs, ys)
 # plt.xlabel("Programming Language")
 # plt.ylabel("Normalized Salary")
 # plt.title("Programming Language Salaries")
@@ -73,17 +73,16 @@ ys = [
 # plt.savefig(os.path.join(PLOT_DIR, "line.png"))
 
 ### scatter plot of number of programmers by location
-xs = ["Denver", "Seattle", "Cary", "Louisville"]
-ys = [
-    len(denver_salaries),
-    len(seattle_salaries),
-    len(cary_salaries),
-    len(louisville_salaries),
-]
+# xs = ["Denver", "Seattle", "Cary", "Louisville"]
+# ys = [
+#     len(denver_salaries),
+#     len(seattle_salaries),
+#     len(cary_salaries),
+#     len(louisville_salaries),
+# ]
 
-plt.figure()
-plt.scatter(xs, ys)
-plt.show()
+# plt.figure()
+# plt.scatter(xs, ys)
 # plt.savefig(os.path.join(PLOT_DIR, "scatter.png"))
 
 ### scatter plot and line plot together using different colors and setting y-axis limits

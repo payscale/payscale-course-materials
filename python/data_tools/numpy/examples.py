@@ -6,7 +6,6 @@ import matplotlib.pyplot as plt
 
 
 # create 3 x 5 array of numbers from 0..14
-print(np.arange(15))
 arr = np.arange(15).reshape(3, 5)
 
 print(arr)
@@ -23,26 +22,26 @@ print(arr)
 # print(arr.T)
 
 # 1-d array
-arr = np.array([1, 2, 3])
+# arr = np.array([1, 2, 3])
 # print(arr)
 # print(arr ** 2)
 # print(2 * arr)
-print(np.cumsum(arr))  # cumulative sum
+# print(np.cumsum(arr))  # cumulative sum
 
 # other array creation
 # print(np.linspace(start=0, stop=100, num=25))
-print(np.ones(25))
-print(np.zeros(25))
+# print(np.ones(25))
+# print(np.zeros(25))
 
 # extract pandas column as numpy array using .values
-df = pd.read_csv(os.path.join("..", "data", "clean.csv"))
-arr = df["annual hours worked"].values
-print(type(arr))
+# df = pd.read_csv(os.path.join("..", "data", "clean.csv"))
+# arr = df["annual hours worked"].values
+# print(type(arr))
 # print(arr)
 
 # boolean slicing
 # all the non-standard work hours
-print(arr[arr != 2080])
+# print(arr[arr != 2080])
 
 # aggregations
 # print(np.mean(arr))
@@ -61,7 +60,7 @@ print(arr[arr != 2080])
 # plt.show()
 
 # binomial distribution
-plt.figure()
-arr = np.random.binomial(n=10, p=0.5, size=1000)
-plt.hist(arr, bins=25)
-plt.show()
+# plt.figure()
+# arr = np.random.binomial(n=10, p=0.5, size=1000)
+# plt.hist(arr, bins=25)
+# plt.show()

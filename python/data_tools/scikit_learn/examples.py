@@ -14,7 +14,7 @@ plt.style.use('ggplot')
 # wher etraffic is higher during busy hours
 hours = range(1, 25)  # 1-24
 days = range(1, 8)  # 1-7
-weeks = range(1, 2)  # 1
+weeks = range(1, 2)  # 1-2
 total_hours = range(1, (len(hours) * len(days) * len(weeks)) + 1)
 
 usage = []
@@ -48,24 +48,24 @@ print(usage)
 # k-means clustering
 
 # need to create a 2-d matrix
-usage_mat = []
-for h, u in zip(total_hours, usage):
-    usage_mat.append([h, u])
-usage_mat = np.array(usage_mat)
+# usage_mat = []
+# for h, u in zip(total_hours, usage):
+#     usage_mat.append([h, u])
+# usage_mat = np.array(usage_mat)
 
 # print(usage_mat)
 
-k_means = cluster.KMeans(n_clusters=2)
-k_means.fit(usage_mat)
+# k_means = cluster.KMeans(n_clusters=2)
+# k_means.fit(usage_mat)
 
 # view the assigned clusters
-print(k_means.labels_)
+# print(k_means.labels_)
 
 # using numpy boolean slicing/masking to get usage and hours for the given clusters
-high_usage = usage[k_means.labels_ == 1]
-high_hours = total_hours[k_means.labels_ == 1]
-low_usage = usage[k_means.labels_ == 0]
-low_hours = total_hours[k_means.labels_ == 0]
+# high_usage = usage[k_means.labels_ == 1]
+# high_hours = total_hours[k_means.labels_ == 1]
+# low_usage = usage[k_means.labels_ == 0]
+# low_hours = total_hours[k_means.labels_ == 0]
 
 # plt.figure()
 # plt.plot(high_hours, high_usage, 'go')
@@ -93,26 +93,26 @@ low_hours = total_hours[k_means.labels_ == 0]
 
 
 # Gaussian Mixed Model
-g = mixture.GMM(n_components=2)
-g.fit(usage.reshape(len(usage), 1))
-print(usage)
-print(usage.reshape(len(usage), 1))
+# g = mixture.GMM(n_components=2)
+# g.fit(usage.reshape(len(usage), 1))
+# print(usage)
+# print(usage.reshape(len(usage), 1))
 
 # view the means of the underlying estimated distributions
-print(g.means_)
+# print(g.means_)
 
 # predict which points should belong to each distribution
 # Expectation-Maximization algorithm
-predictions = g.predict(usage.reshape(len(usage), 1))
-g.predict(usage.reshape(len(usage), 1))
+# predictions = g.predict(usage.reshape(len(usage), 1))
+# g.predict(usage.reshape(len(usage), 1))
 
 # plot clusters like we did with k-means
-high_usage = usage[predictions == 1]
-high_hours = total_hours[predictions == 1]
-low_usage = usage[predictions == 0]
-low_hours = total_hours[predictions == 0]
+# high_usage = usage[predictions == 1]
+# high_hours = total_hours[predictions == 1]
+# low_usage = usage[predictions == 0]
+# low_hours = total_hours[predictions == 0]
 
-plt.figure()
-plt.plot(high_hours, high_usage, 'go')
-plt.plot(low_hours, low_usage, 'ro')
-plt.show()
+# plt.figure()
+# plt.plot(high_hours, high_usage, 'go')
+# plt.plot(low_hours, low_usage, 'ro')
+# plt.show()

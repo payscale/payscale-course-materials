@@ -26,7 +26,7 @@ for city in ["Cary", "Denver", "Louisville"]:
     if city_std > max_std:
         max_std = city_std
         associated_city = city
-print(f"{associated_city} has the highest standard devation of salaries at: {max_std}")
+print(f"{associated_city} has the highest standard devation of salries at: {max_std}")
 
 # for the following two problems, use this documentation:
 # https://docs.scipy.org/doc/numpy/reference/generated/numpy.random.normal.html#numpy.random.normal

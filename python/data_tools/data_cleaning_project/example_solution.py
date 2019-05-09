@@ -12,27 +12,13 @@ import numpy as np
 import pandas as pd
 
 
-class Thing:
-    """
-    Show up in tooling
-    """
-    # this won't show up
-
-    def __init__(self):
-        pass
-
-
 def normalize_location(raw_locations):
-    """
-    This documents this function, some code: `x + 1`
-    >>> commands
-    """
     normalized_values = []
     for location in raw_locations:
         location = location.split(",")[0]
         location = location.title()
-        normalized_locations.append(location)
-    return normalized_locations
+        normalized_values.append(location)
+    return normalized_values
 
 
 def normalize_programming_language(raw_prog_langs):
