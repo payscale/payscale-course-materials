@@ -1,0 +1,41 @@
+topics
+    introduction to oop
+        example class (Employee class) going through class syntax
+        animal class excercise
+            instance variables
+            inheritance
+            class variables
+            word of warning, diamond problem
+            do oop_exercise.py
+        diamond problem (CatDog)
+    introduction to data structures
+        stack and queue library
+            "what is an api?"
+            guided impl for stack
+                peek is exercise
+            outline for queue (excercise to fill in)
+            imports/libs
+            defensive programming
+                raising exceptions
+                custom exceptions
+            python data model
+                __len__
+                __repr__
+            tests
+                guided test for stack
+                    peek is excercise
+                on your own test for queue
+            refactor to use Sequence base
+    code documentation
+        use stack and queue
+            document module
+                show hover
+            document class
+                show hover
+            document method
+                show hover
+    small commit to shared payscale codebase
+        git
+        tests
+        branch and push
+        pull request

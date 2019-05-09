@@ -1,0 +1,22 @@
+course covers 4 main libraries
+
+pandas
+    go through examples.py
+    go through exercises.py
+numpy
+    go through examples.py
+    go through exercises.py
+matplotlib
+    go through examples.py
+    go through exercises.py
+scikit-learn
+    go through examples.py
+
+there is also a data cleaning project in data_cleaning_project/
+that contains an exercise and solution
+
+the data/ directory contains a few files
+    test.xlsx is used in the pandas examples
+    messy.csv is the starting file used in the data_cleaning_project
+    clean.csv is used in many examples and is the file you try to recreate in
+    data_cleaning_project/

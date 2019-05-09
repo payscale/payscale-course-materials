@@ -1,0 +1,42 @@
+location,programming language,annual salary,annual hours worked
+Seattle,python,100000,2080
+Seattle,python,111000,2080
+Seattle,python,96000,2080
+Seattle,Haskell,120000,2080
+Seattle,Haskell,150000,2080
+Seattle,Haskell,200000,2080
+Seattle,Haskell,180000,2080
+Seattle,C#,100000,2080
+Seattle,C#,99000,2080
+seattle,C#,300000,2080
+"seattle, WA",Java,120000,2080
+"Seattle, WA",Java,110000,2080
+Denver,Python,90000,2080
+Denver,Python,80000,2080
+Denver,Python,100000,2080
+"Denver, CO",Haskell,100000,2080
+"Denver, CO",Haskell,110000,2080
+Denver,C#,70000,2080
+Denver,C#,69000,2080
+Denver,C#,80000,2080
+Denver,Java,90000,2080
+Denver,java,43000,1040
+Louisville,Python,70000,3000
+Louisville,Python,60000,2096
+Louisville,haskell,100000,2080
+Louisville,haskell,110000,2080
+Louisville,C#,80000,3000
+Louisville,C#,85000,2080
+Louisville,Java,50000,1000
+"Louisville, KT",Java,90000,2080
+Cary,The Python Programming Language,160000,1999
+Cary,The Python Programming Language,170000,2080
+Cary,The Python Programming Language,140000,2080
+Cary,The Python Programming Language,130000,2080
+Cary,The Python Programming Language,130000,2080
+Cary,The Python Programming Language,120000,2080
+Cary,The Python Programming Language,110000,2080
+Cary,The Haskell Programming Language,300000,2080
+Cary,The Java Programming Language,100000,2080
+Cary,The Java Programming Language,105000,2080
+"Cary, NC",The Java Programming Language,125000,2080
