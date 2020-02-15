@@ -24,8 +24,8 @@
         - `__len__`
         - `__repr__`
 - Writing tests
-    - The `unnittest` [module](https://docs.python.org/3/library/unittest.html)
-        - As an alternative to `unnittest`, [pytest](https://docs.pytest.org/en/latest/) is a popular third party library
+    - The `unittest` [module](https://docs.python.org/3/library/unittest.html)
+        - As an alternative to `unittest`, [pytest](https://docs.pytest.org/en/latest/) is a popular third party library
     - Write tests for `lib.py` in `test_lib.py`
 - Code Documentation
     - We'll document our new libarary
